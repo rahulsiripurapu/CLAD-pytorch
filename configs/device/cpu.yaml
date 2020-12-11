@@ -1,0 +1,8 @@
+device: cpu
+gpus: 0
+backend: null
+num_workers: 0
+enable_checkpointing: false #TODO figure out mystery of checkoints having "" and wandb storing them
+render_validation: false
+progress_bar: 10
+wandb_logging: false

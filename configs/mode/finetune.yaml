@@ -1,0 +1,10 @@
+scale_entropy: 1.0
+algo: DIAYN_finetune
+render_validation: false
+enable_checkpointing: false
+disc_size: 300
+checkpoint_period: 100
+grad_clip: 0
+num_runs: 2 # Number of runs to find best skill
+#ckpt: /Users/rahulsiripurapu/PycharmProjects/CLAD-pytorch/outputs/2020-06-05/11-27-29/wandb/run-20200605_092729-mapjkxls/epoch=900.ckpt
+#ckpt_load: /Users/rahulsiripurapu/CLAD/epoch=990.ckpt

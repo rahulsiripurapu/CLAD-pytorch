@@ -1,0 +1,9 @@
+scale_entropy: 0.1
+algo: DIAYN
+enable_checkpointing: false
+checkpoint_period: 10
+wandb_logging: true
+# TODO if max epochs - 1 is divisible by cktp period, then two ckpts will get saved
+save_last: true
+max_epochs: 7
+save_pool: false

@@ -1,0 +1,20 @@
+#env: half-cheetah #double-pendulum
+#layer_size: 300
+max_epochs: 1000
+max_path_length: 200
+min_pool_size: 1
+disc_size: [20,40,75,150]
+eval_distilled: false
+#batch_size: 1000
+#scale_entropy: 0.1
+algo: DIAYN_viz
+render_validation: true
+#progress_bar: 0
+num_runs: 2
+#ckpt: /Users/rahulsiripurapu/CLAD/CLAD/ckpts-finetune/epoch=990-seed2.ckpt #/Users/rahulsiripurapu/PycharmProjects/CLAD-pytorch/outputs/2020-06-03/13-56-08/lightning_logs/version_0/checkpoints/epoch=990.ckpt
+skill: 9
+sim_policy: true
+path_name: /Users/rahulsiripurapu/CLAD/testvideos/skill
+wandb_logging: false
+ext: null
+skill_list: null

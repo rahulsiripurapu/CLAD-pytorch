@@ -1,0 +1,69 @@
+name: null
+alias: dsac
+project: CLAD-pytorch
+tags: null
+group: null
+
+device: gpu
+gpus: 1
+backend: null
+num_workers: 0
+
+env: double-pendulum
+
+algo: DIAYN
+version: default
+
+K: 4 # Number of mixtures in GMM policy
+add_p_z: true
+scale_entropy: 0.1
+num_skills: 50
+tau: 0.01 # Target value function update weight
+reg: 0.001 # Regularization coefficient for regularizing policy outputs
+layer_size: 128 # Number of hidden units in vf, qf and policy nets
+eps: 0.000001 # TODO still not used in SAC
+deterministic_eval: true # Whether to evaluate policy in deterministic mode
+include_actions: false # TODO unused
+learn_p_z: false # TODO unused
+
+epoch_length: 1000 # Number of training steps before validation
+lr: 0.0003
+max_epochs: 29
+n_train_repeat: 1 # Number of times to train networks for every step of sampling
+batch_size: 128
+grad_clip: 0
+early_stop_callback: false
+check_val_n_epoch: 1  # validation is done on HCF of this and epoch_length(Pl logic)
+
+max_path_length: 1000
+discount: 0.99 # Discounted future Q value
+scale_reward: 1.0
+max_pool_size: 1000000 # Max size of replay buffer
+min_pool_size: 1000 # Min size of replay buffer before training begins
+
+seed: 1
+
+enable_checkpointing: true
+ckpt: null # Checkpoint to resume training from
+ckpt_dir: null # Default save path for checkpoints (Auto init in PL)
+ckpt_load: null # Checkpoint to load for finetuning
+save_last: false
+save_pool: false
+
+wandb_logging: false
+profiler: true
+track_grad_norm: 0 # 2 tracks L2 norm only of last optimizer(bug in pl),
+#  also watches model using wandb
+progress_bar: 0 # Number of steps before progress bar update. 0 = disabled
+weight_summary: full # prints full weight summary of all modules
+render_validation: true
+save_full_state: true # TODO unused
+sync_pkl: true # TODO unused
+snapshot_gap: 10 # TODO unused
+snapshot_mode: gap # TODO unused
+
+
+defaults:
+  - device: cpu
+  - environment: half_cheetah
+  - mode: dsac

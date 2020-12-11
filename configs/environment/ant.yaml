@@ -1,0 +1,4 @@
+env: ant
+layer_size: 300
+max_epochs: 10000
+checkpoint_period: 100

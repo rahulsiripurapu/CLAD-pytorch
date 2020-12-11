@@ -1,0 +1,12 @@
+scale_entropy: 1.0
+algo: HERF
+alias: herf
+enable_checkpointing: true
+checkpoint_period: 100
+num_skills: 50
+wandb_logging: true
+render_validation: false
+path_name: /Users/rahulsiripurapu/CLAD/herfvideos/skill
+n_epochs_eval: 50
+disc_size: 300
+ckpt_load: /Users/rahulsiripurapu/CLAD/ckpts-visualize/half-cheetah/Diayn-new/seed3-best/epoch=990.ckpt

@@ -1,0 +1,22 @@
+file_list: /Users/rahulsiripurapu/PycharmProjects/CLAD-pytorch/plot_list.txt
+scale_entropy: 1.0
+algo: DIAYN_distill
+disc_size: [300,150,75,40,20,10,5]
+#progress_bar: 0
+enable_checkpointing: false
+render_validation: false
+checkpoint_period: 100
+wandb_logging: false
+progress_bar: 0
+load_pool: false
+max_path_length: 100
+num_runs: 2
+ext: null
+path_name: /Users/rahulsiripurapu/CLAD/ckpts-visualize/plot.png
+sim_policy: false
+skill: null
+skill_list: null
+num_samples: 1000 # Number of samples of different skills to average per distiller
+points_per_curve: 100 # number of points while plotting curve
+top_n: 5 # Number of high scoring states to sample from
+plotting: true

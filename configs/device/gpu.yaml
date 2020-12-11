@@ -1,0 +1,9 @@
+device: 2
+gpus: [2]
+backend: null
+num_workers: 0
+wandb_logging: true
+enable_checkpointing: false
+render_validation: false
+progress_bar: 0
+track_grad_norm: 0

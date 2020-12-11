@@ -1,0 +1,12 @@
+scale_entropy: 1.0
+algo: DIAYN_retrain
+disc_size: [20,40,75,150] # Size of default distilled disc, doesn't affect original disc size.
+enable_checkpointing: true
+render_validation: false
+checkpoint_period: 10
+wandb_logging: true
+distill: true # If true, uses distilled discriminator from ckpt for training.
+switch_epoch: [0,0,6,8] # epoch at which to switch disc, need one extra term as original disc is also added to distiller list
+num_runs: 2 # Number of runs to evaluate on_train_end to print retrained ckpt statistics
+ckpt_load: /Users/rahulsiripurapu/PycharmProjects/CLAD-pytorch/outputs/2020-07-12/11-10-47/CLAD-pytorch/version1_1qw8jjbe/epoch=0.ckpt
+#/Users/rahulsiripurapu/CLAD/ckpts-visualize/half-cheetah/Diayn-new/seed1-2nd/epoch=990.ckpt

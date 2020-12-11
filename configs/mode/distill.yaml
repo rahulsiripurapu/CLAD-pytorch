@@ -1,0 +1,10 @@
+scale_entropy: 1.0
+algo: DIAYN_distill
+disc_size: [150,75,40,20]
+enable_checkpointing: true
+render_validation: false
+checkpoint_period: 100
+wandb_logging: false
+progress_bar: 0
+load_pool: false
+ckpt_load: /Users/rahulsiripurapu/CLAD/ckpts-visualize/half-cheetah/Diayn-new/seed1-2nd/epoch=990.ckpt #/Users/rahulsiripurapu/PycharmProjects/CLAD-pytorch/outputs/2020-07-05/18-28-56/lightning_logs/version_0/checkpoints/epoch=0.ckpt #

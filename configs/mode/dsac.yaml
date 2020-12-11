@@ -1,0 +1,7 @@
+max_epochs_per_iter: 2
+max_distill_epochs: 50
+num_iters: 5
+max_path_length: 1000
+epoch_length: 1000
+wandb_logging: false
+name_d: null
