@@ -1,0 +1,8 @@
+/venv/
+/lightning_logs/
+/wandb/
+/CLAD-pytorch/
+__pycache__
+*.out
+*DS_Store
+/outputs/
