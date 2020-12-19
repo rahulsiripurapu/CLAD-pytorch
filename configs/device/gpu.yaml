@@ -1,5 +1,5 @@
-device: 2
-gpus: [2]
+device: 0
+gpus: [0]
 backend: null
 num_workers: 0
 wandb_logging: true
