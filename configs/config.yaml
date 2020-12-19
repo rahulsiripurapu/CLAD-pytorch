@@ -64,6 +64,6 @@ snapshot_mode: gap # TODO unused
 
 
 defaults:
-  - device: cpu
-  - mode: plot
-  - environment: hopper
+  - device: gpu
+  - mode: diayn
+  - environment: half_cheetah
