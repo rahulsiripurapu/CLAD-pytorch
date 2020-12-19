@@ -8,6 +8,15 @@ Engineering reward functions to successfully train an agent and generalize to do
 
 The full paper can be found [here](./CLAD-camera-ready.pdf)
 
+## Installation and Example Run
+
+```
+git clone https://github.com/rahulsiripurapu/CLAD-pytorch.git
+cd CLAD-pytorch
+conda env create -f environment38.yml
+conda activate CLAD-pytorch
+python main.py
+```
 
 
 
