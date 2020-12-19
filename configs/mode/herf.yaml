@@ -8,5 +8,12 @@ wandb_logging: true
 render_validation: false
 path_name: /Users/rahulsiripurapu/CLAD/herfvideos/skill
 n_epochs_eval: 50
-disc_size: 300
+disc_size: [20,40,75,150]
+run: curriculum_single_skill_training
+single_skill: 8 # If performing single skill training, skill number < 25
+double_skill: null # If performing double skill training, skill number < 25
+num_runs: 2
+max_epochs: 1000
+device: 0
+gpus: [0]
 ckpt_load: /Users/rahulsiripurapu/CLAD/ckpts-visualize/half-cheetah/Diayn-new/seed3-best/epoch=990.ckpt

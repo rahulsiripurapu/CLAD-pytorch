@@ -64,7 +64,7 @@ class HERF():
         reward_ctrl = - 0.1 * np.square(action).sum()
         vel = (o2[2] - o1[2]) / dt  # derivative of angular position of hc
         reward_flip = self.hill_function(vel, target)
-        return reward_ctrl + 5*reward_flip
+        return 5*(reward_ctrl + reward_flip)
 
     def stand(self, o1, o2, action, dt, target):
         # head stand or back stand depending on angle.

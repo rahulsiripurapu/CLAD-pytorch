@@ -5,5 +5,8 @@ checkpoint_period: 10
 wandb_logging: true
 # TODO if max epochs - 1 is divisible by cktp period, then two ckpts will get saved
 save_last: true
-max_epochs: 7
+max_epochs: 1000
 save_pool: false
+run: diayn_example # run name
+device: 0 # default for gpu 0 
+gpus: [0]

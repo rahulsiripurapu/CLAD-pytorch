@@ -235,13 +235,14 @@ class DIAYN_retrain(DIAYN):
                             'progress_bar': {'val_ret': path_return,
                                              'path_len': path_length}})
 
-    def on_train_end(self) -> None:
-        avg_ret = np.zeros(len(self.distiller))
-        for i in range(self._num_skills):
-            print("Generating video for skill ", i)
-            ims, rews, ret = self.run_skill(i)
-            avg_ret += ret
-        print("Average path return: ", avg_ret / self._num_skills)
+    # Commenting out to avoid problems while running on GPU
+    # def on_train_end(self) -> None:
+    #     avg_ret = np.zeros(len(self.distiller))
+    #     for i in range(self._num_skills):
+    #         print("Generating video for skill ", i)
+    #         ims, rews, ret = self.run_skill(i)
+    #         avg_ret += ret
+    #     print("Average path return: ", avg_ret / self._num_skills)
 
     def run_skill(self,skill):
         ims = []

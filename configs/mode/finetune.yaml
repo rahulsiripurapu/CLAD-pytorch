@@ -8,3 +8,8 @@ grad_clip: 0
 num_runs: 2 # Number of runs to find best skill
 #ckpt: /Users/rahulsiripurapu/PycharmProjects/CLAD-pytorch/outputs/2020-06-05/11-27-29/wandb/run-20200605_092729-mapjkxls/epoch=900.ckpt
 #ckpt_load: /Users/rahulsiripurapu/CLAD/epoch=990.ckpt
+max_epochs: 1000
+save_pool: false
+run: finetune_example # run name
+device: 0 # default for gpu 0 
+gpus: [0]

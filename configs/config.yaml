@@ -47,8 +47,8 @@ enable_checkpointing: true
 ckpt: null # Checkpoint to resume training from
 ckpt_dir: null # Default save path for checkpoints (Auto init in PL)
 ckpt_load: null # Checkpoint to load for finetuning
-save_last: false
-save_pool: false
+save_last: true # Saves last checkpoint
+save_pool: false # Does not save replay buffer with ckpt
 
 wandb_logging: false
 profiler: true
