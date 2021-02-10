@@ -1,6 +1,6 @@
 # CLAD: Curriculum Learning through Distilled Discriminators
 
-This repo is mainly based on https://github.com/ben-eysenbach/sac, rewritten entirely in PyTorch, using PyTorch-Lightning, Hydra and Weights and Biases. Contains the code for the paper *Curriculum Learning through Distilled Discriminators*. A 3-minute explainer can be found [here](https://www.youtube.com/watch?v=1klGyHZ5-2w)
+This repo is mainly based on https://github.com/ben-eysenbach/sac, rewritten entirely in PyTorch, using [PyTorch-Lightning](https://github.com/PyTorchLightning/pytorch-lightning), [Hydra](https://github.com/facebookresearch/hydra) and [Weights and Biases](https://wandb.com). Contains the code for the paper *Curriculum Learning through Distilled Discriminators*. A 3-minute explainer can be found [here](https://www.youtube.com/watch?v=1klGyHZ5-2w)
 
 ## Abstract
 
