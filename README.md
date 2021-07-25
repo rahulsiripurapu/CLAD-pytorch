@@ -18,5 +18,14 @@ conda activate CLAD-pytorch
 python main.py
 ```
 
+## Citing our Work
+```
+@article{siripurapuCurriculumLearningDistilled2020,
+  author       = {Rahul Siripurapu and Jürgen Schmidhuber and Louis Kirsch},
+  title        = {Curriculum Learning through Distilled Discriminators},
+  conference   = {DRL workshop, NeurIPS 2020},
+  url          = {https://github.com/rahulsiripurapu/CLAD-pytorch/CLAD-camera-ready.pdf},
+}
+```
 
 
